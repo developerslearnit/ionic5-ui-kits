@@ -1,0 +1,44 @@
+<ion-content class="walktruone">
+
+  <div class="topSpace"></div>
+
+  <div class="slide-wrap">
+    <ion-slides #slider pager="true" [options]="slideOpts" (ionSlideWillChange)="slideChanged()" class="ion-padding-top">
+      <ion-slide>
+        <img src="assets/img/sliderImg_1.png" />
+        <h2>Location</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets/img/sliderImg_2.png" class="home_img" />
+        <h2>Select Home</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets/img/sliderImg_3.png" />
+        <h2>Stay</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="page_footer">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="9">
+
+        </ion-col>
+        <ion-col size="3">
+          <ion-button (click)="next()" *ngIf="!isLastSlide">Next</ion-button>
+          <ion-button *ngIf="isLastSlide">Start</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
