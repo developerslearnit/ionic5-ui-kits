@@ -36,7 +36,7 @@ export class LandingPage implements AfterViewInit  {
          this.showSlideText =false;
          if (ev.deltaX < this.loginWrapWidth) {
            this.zone.run(() => {
-             this.router.navigate(['/main']);
+             this.router.navigate(['/walktru-one']);
          });
            
          }else{
